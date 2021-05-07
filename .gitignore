@@ -1,0 +1,10 @@
+__pycache__/
+.DS_Store
+*.pyc
+common/__pycache__/
+common/.DS_Store
+common/*.pyc
+my_module/__pycache__/
+my_module/.DS_Store
+my_module/*.pyc
+config/
