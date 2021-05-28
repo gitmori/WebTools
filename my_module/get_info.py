@@ -8,9 +8,9 @@ from os.path import basename
 # CSSセレクタを用いてスクレイピングする関数
 def GetInfo(url):
 
-    # fake_useragentを使ったUA設定（今回はブラウザIEとしてランダム生成）
+    # fake_useragentを使ったUA設定（今回はブラウザChromeとしてランダム生成）
     ua = UserAgent()
-    custom_headers = {'User-Agent': ua.ie}
+    custom_headers = {'User-Agent': ua.chrome}
 
     # UA設定した状態でリクエストする
     fake = get(url, timeout=3, headers=custom_headers)
